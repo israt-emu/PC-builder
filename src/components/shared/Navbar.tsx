@@ -24,7 +24,9 @@ const Navbar = () => {
 
           <li className="flex items-center">
             <Link href="/pc-builder" className="flex items-center px-4 py-1 rounded">
-              <Button variant="outline">PC Builder</Button>
+              <Button variant="outline" className="border-primary hover:text-background">
+                PC Builder
+              </Button>
             </Link>
           </li>
           {/* <li className="flex items-center">{user?.token && <img src={avatar} alt="" className="w-6 h-6 rounded-full" />}</li>
@@ -52,8 +54,10 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="flex items-center">
-            <Link href="/pc-builder" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
-              PC Buider
+            <Link href="/pc-builder" className="flex items-center px-4 py-1 rounded">
+              <Button variant="outline" className="border-primary hover:text-background">
+                PC Builder
+              </Button>
             </Link>
           </li>
 
