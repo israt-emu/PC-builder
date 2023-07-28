@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://www.giznext.com/images/chipset/intel-core-i5.jpeg?width=160",
+    "image": "https://i.ibb.co/gvWHpTc/intel-core-i5.jpg",
     "productName": "Intel Core i5-12500H Processor",
     "category": "CPU",
     "price": 3500,
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bp-upYu_lceNQJhu-NlZySw-ofGQcD7niiHzUhQ2CQ&s",
+    "image": "https://i.ibb.co/fFQRKJj/images.jpg",
     "productName": "AMD Ryzen 7 5800X Processor",
     "category": "CPU",
     "price": 4500,
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "image": "https://www.dateks.lv/images/pic/2400/2400/243/1296.jpg",
+    "image": "https://i.ibb.co/BTPBbL2/1296.webp",
     "productName": "AMD Ryzen 9 5900HX Processor",
     "category": "CPU",
     "price": 4500,
@@ -64,7 +64,7 @@
   },
   {
     "id": 4,
-    "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/bundle-with-pc-intel-11th-gen-rocket-lake-core-11617172224.webp",
+    "image": "https://i.ibb.co/Y459K0N/bundle-with-pc-intel-11th-gen-rocket-lake-core-11617172224.webp",
     "productName": "Intel Core i7-11700K Processor",
     "category": "CPU",
     "price": 3900,
@@ -85,7 +85,7 @@
   },
   {
     "id": 5,
-    "image": "https://techbd.com.bd/wp-content/uploads/2021/04/asus-rog-strix-z590-e-gaming-wifi-motherboard-1-500x500-1.png",
+    "image": "https://i.ibb.co/6Y3g5QZ/asus-rog-strix-z590-e-gaming-wifi-motherboard-1-500x500-1.png",
     "productName": "ASUS ROG Strix Z590-E Gaming Motherboard",
     "category": "motherboard",
     "price": 320,
@@ -108,7 +108,7 @@
   },
   {
     "id": 6,
-    "image": "https://www.cloud.ryanscomputers.com/cdn/products/medium/gigabyte-x570-aorus-elite-ddr4-am4-socket-amd-21565240504.webp",
+    "image": "https://i.ibb.co/9NRFv2H/gigabyte-x570-aorus-elite-ddr4-am4-socket-amd-21565240504.webp",
     "productName": "GIGABYTE X570 AORUS Elite Motherboard",
     "category": "motherboard",
     "price": 250,
@@ -131,7 +131,7 @@
   },
   {
     "id": 7,
-    "image": "https://www.ultratech.com.bd/image/cache/2021/12/mag-b550-tomahawk-500x500-1-1.jpg-500x500.jpg.webp",
+    "image": "https://i.ibb.co/3Mr25R7/mag-b550-tomahawk-500x500-1-1-jpg-500x500-jpg.webp",
     "productName": "MSI MAG B550 TOMAHAWK Motherboard",
     "category": "motherboard",
     "price": 180,
@@ -154,7 +154,7 @@
   },
   {
     "id": 8,
-    "image": "https://m.media-amazon.com/images/I/71eGsifg7qL.jpg",
+    "image": "https://i.ibb.co/ws4XGDm/71e-Gsifg7q-L.jpg",
     "productName": "ASRock B560M-ITX/ac Mini ITX Motherboard",
     "category": "motherboard",
     "price": 150,

@@ -6,10 +6,13 @@ import RootLayout from "@/components/layout/RootLayout";
 import bannerImg from "../assets/images/banner.jpg";
 import {Button} from "@/components/ui/button";
 import FeaturedCategory from "@/components/category/FeaturedCategory";
+import FeaturedProducts from "@/components/products/FeaturedProducts";
+import {IProductProps} from "@/types/products";
 
 const inter = Inter({subsets: ["latin"]});
 
-const Home: NextPageWithLayout = () => {
+const Home: NextPageWithLayout<IProductProps> = ({products}) => {
+  console.log(products);
   return (
     <main className={`flex flex-col items-center py-8 justify-between ${inter.className}`}>
       <section className="w-11/12 mx-auto bg-secondary rounded">
@@ -32,11 +35,23 @@ const Home: NextPageWithLayout = () => {
           </div>
         </div>
       </section>
+      <FeaturedProducts products={products} />
       <FeaturedCategory />
     </main>
   );
 };
 Home.getLayout = function getLayout(Home: ReactElement) {
   return <RootLayout>{Home}</RootLayout>;
+};
+export const getStaticProps = async () => {
+  const res = await fetch("http://localhost:3000/api/products");
+  const data = await res.json();
+  // console.log(data);
+  return {
+    props: {
+      products: data?.data,
+    },
+    revalidate: 10,
+  };
 };
 export default Home;
