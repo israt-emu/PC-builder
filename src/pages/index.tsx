@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {Inter} from "next/font/google";
-import React, {ReactElement} from "react";
+import {ReactElement} from "react";
 import {NextPageWithLayout} from "./_app";
 import RootLayout from "@/components/layout/RootLayout";
 
