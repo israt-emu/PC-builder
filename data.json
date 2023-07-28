@@ -7,9 +7,9 @@
     "price": 3500,
     "status": "In stock",
     "reviews": [
-      {"name": "Israt Jahan", "review": "", "rating": 4.5},
-      {"name": "Nusrat Jahan", "review": "", "rating": 4.4},
-      {"name": "Tushar", "review": "", "rating": 4.8}
+      {"name": "Israt Jahan", "review": "Handles everything like a champ.", "rating": 4.5},
+      {"name": "Nusrat Jahan", "review": "Beast of a CPU!", "rating": 4.4},
+      {"name": "Tushar", "review": "Worth every penny.", "rating": 4.8}
     ],
     "description": "The Core i5 processor has three, four, or six megabytes of cache and is available at several speeds ranging from 1.90 GHz to 3.80 GHz. Depending on the motherboard, it uses the LGA 1150 or LGA 1155 socket. Four cores make up the quad-core configuration of Core i5 processors.",
     "key_features": {
@@ -22,28 +22,28 @@
   },
   {
     "id": 2,
-    "image": "https://www.example.com/images/cpu-1.jpg",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0bp-upYu_lceNQJhu-NlZySw-ofGQcD7niiHzUhQ2CQ&s",
     "productName": "AMD Ryzen 7 5800X Processor",
     "category": "CPU",
     "price": 4500,
     "status": "In stock",
     "reviews": [
-      {"name": "John Doe", "review": "", "rating": 4.7},
-      {"name": "Jane Smith", "review": "", "rating": 4.5},
-      {"name": "Alex Johnson", "review": "", "rating": 4.9}
+      {"name": "John Doe", "review": "Very satisfied.", "rating": 4.7},
+      {"name": "Jane Smith", "review": "Very Fast and good performance", "rating": 4.5},
+      {"name": "Alex Johnson", "review": "Awesome performance!", "rating": 4.9}
     ],
     "description": "The AMD Ryzen 7 5800X processor offers eight cores and sixteen threads, making it a powerful CPU for high-performance tasks. It comes with a base clock of 3.8 GHz and can boost up to 4.7 GHz with Precision Boost.",
     "key_features": {
       "brand": "AMD",
       "model": "Ryzen 7 5800X",
       "generation": "Zen 3",
-      "graphics": "None",
+      "graphics": "No integrated graphics",
       "resolution": "N/A"
     }
   },
   {
     "id": 3,
-    "image": "https://www.example.com/images/cpu1.jpeg",
+    "image": "https://www.dateks.lv/images/pic/2400/2400/243/1296.jpg",
     "productName": "AMD Ryzen 9 5900HX Processor",
     "category": "CPU",
     "price": 4500,
@@ -60,6 +60,119 @@
       "generation": "3rd Gen",
       "graphics": "AMD Radeon Graphics",
       "resolution": "3840 x 2160 @ 60Hz"
+    }
+  },
+  {
+    "id": 4,
+    "image": "https://www.cloud.ryanscomputers.com/cdn/products/main/bundle-with-pc-intel-11th-gen-rocket-lake-core-11617172224.webp",
+    "productName": "Intel Core i7-11700K Processor",
+    "category": "CPU",
+    "price": 3900,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Mark Johnson", "review": "Impressive performance.", "rating": 4.6},
+      {"name": "Emily Adams", "review": "Runs cool under load.", "rating": 4.8},
+      {"name": "Michael Lee", "review": "Great for gaming.", "rating": 4.7}
+    ],
+    "description": "The Intel Core i7-11700K is an 11th Gen processor with 8 cores and 16 threads. It operates at a base frequency of 3.6 GHz and can reach up to 5.0 GHz with Intel Turbo Boost. The processor is compatible with LGA 1200 motherboards.",
+    "key_features": {
+      "brand": "Intel",
+      "model": "Core i7-11700K",
+      "generation": "11th Gen",
+      "graphics": "Intel® UHD Graphics 750",
+      "resolution": "4096 x 2304 @ 60Hz"
+    }
+  },
+  {
+    "id": 5,
+    "image": "https://techbd.com.bd/wp-content/uploads/2021/04/asus-rog-strix-z590-e-gaming-wifi-motherboard-1-500x500-1.png",
+    "productName": "ASUS ROG Strix Z590-E Gaming Motherboard",
+    "category": "motherboard",
+    "price": 320,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Alex Chen", "review": "Great features and performance.", "rating": 4.7},
+      {"name": "Sophia Lee", "review": "Easy to overclock.", "rating": 4.6},
+      {"name": "Michael Johnson", "review": "Solid build quality.", "rating": 4.8}
+    ],
+    "description": "The ASUS ROG Strix Z590-E Gaming is a high-end motherboard designed for Intel 10th and 11th Gen processors. It features robust power delivery, PCIe 4.0 support, and extensive connectivity options. The motherboard also comes with built-in Wi-Fi 6 and 2.5 Gigabit Ethernet.",
+    "key_features": {
+      "brand": "ASUS",
+      "model": "ROG Strix Z590-E Gaming",
+      "socket": "LGA 1200",
+      "chipset": "Intel Z590",
+      "memory_slots": 4,
+      "max_memory": "128GB",
+      "form_factor": "ATX"
+    }
+  },
+  {
+    "id": 6,
+    "image": "https://www.cloud.ryanscomputers.com/cdn/products/medium/gigabyte-x570-aorus-elite-ddr4-am4-socket-amd-21565240504.webp",
+    "productName": "GIGABYTE X570 AORUS Elite Motherboard",
+    "category": "motherboard",
+    "price": 250,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Emily Adams", "review": "Reliable and feature-rich.", "rating": 4.8},
+      {"name": "Robert Davis", "review": "Excellent VRM design.", "rating": 4.6},
+      {"name": "Lisa Miller", "review": "Easy BIOS updates.", "rating": 4.7}
+    ],
+    "description": "The GIGABYTE X570 AORUS Elite is a mid-range motherboard for AMD Ryzen processors. It offers PCIe 4.0 support, robust power delivery, and ample connectivity options. The motherboard includes dual M.2 slots for high-speed storage and supports up to 128GB of DDR4 memory.",
+    "key_features": {
+      "brand": "GIGABYTE",
+      "model": "X570 AORUS Elite",
+      "socket": "AM4",
+      "chipset": "AMD X570",
+      "memory_slots": 4,
+      "max_memory": "128GB",
+      "form_factor": "ATX"
+    }
+  },
+  {
+    "id": 7,
+    "image": "https://www.ultratech.com.bd/image/cache/2021/12/mag-b550-tomahawk-500x500-1-1.jpg-500x500.jpg.webp",
+    "productName": "MSI MAG B550 TOMAHAWK Motherboard",
+    "category": "motherboard",
+    "price": 180,
+    "status": "In stock",
+    "reviews": [
+      {"name": "David Brown", "review": "Great value for the price.", "rating": 4.7},
+      {"name": "Sarah Williams", "review": "Stable performance.", "rating": 4.5},
+      {"name": "John Doe", "review": "Good VRM cooling.", "rating": 4.6}
+    ],
+    "description": "The MSI MAG B550 TOMAHAWK is a reliable motherboard designed for AMD Ryzen processors. It supports PCIe 4.0, comes with robust VRM cooling, and features extensive USB and storage options. The motherboard is equipped with Realtek 2.5 Gigabit LAN and audio boost technology.",
+    "key_features": {
+      "brand": "MSI",
+      "model": "MAG B550 TOMAHAWK",
+      "socket": "AM4",
+      "chipset": "AMD B550",
+      "memory_slots": 4,
+      "max_memory": "128GB",
+      "form_factor": "ATX"
+    }
+  },
+  {
+    "id": 8,
+    "image": "https://m.media-amazon.com/images/I/71eGsifg7qL.jpg",
+    "productName": "ASRock B560M-ITX/ac Mini ITX Motherboard",
+    "category": "motherboard",
+    "price": 150,
+    "status": "In stock",
+    "reviews": [
+      {"name": "James Smith", "review": "Perfect for small form factor builds.", "rating": 4.6},
+      {"name": "Sophia Lee", "review": "Decent onboard Wi-Fi.", "rating": 4.3},
+      {"name": "Michael Johnson", "review": "Good choice for HTPC.", "rating": 4.5}
+    ],
+    "description": "The ASRock B560M-ITX/ac is a compact Mini ITX motherboard designed for Intel 10th and 11th Gen processors. It offers PCIe 4.0 support, built-in Wi-Fi 6, and robust power delivery for its size. The motherboard is ideal for small form factor builds and HTPC setups.",
+    "key_features": {
+      "brand": "ASRock",
+      "model": "B560M-ITX/ac",
+      "socket": "LGA 1200",
+      "chipset": "Intel B560",
+      "memory_slots": 2,
+      "max_memory": "64GB",
+      "form_factor": "Mini ITX"
     }
   }
 ]
