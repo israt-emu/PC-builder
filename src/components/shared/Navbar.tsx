@@ -47,7 +47,7 @@ const Navbar = () => {
         </Link>
         <NavigationMenu>
           <NavigationMenuList>
-            <NavigationMenuItem>
+            <NavigationMenuItem className="hover:bg-background">
               <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[150px] gap-3 p-4 md:w-[500px] grid-cols-1 lg:w-[200px] ">

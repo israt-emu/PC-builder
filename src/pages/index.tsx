@@ -5,6 +5,7 @@ import {NextPageWithLayout} from "./_app";
 import RootLayout from "@/components/layout/RootLayout";
 import bannerImg from "../assets/images/banner.jpg";
 import {Button} from "@/components/ui/button";
+import FeaturedCategory from "@/components/category/FeaturedCategory";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -31,6 +32,7 @@ const Home: NextPageWithLayout = () => {
           </div>
         </div>
       </section>
+      <FeaturedCategory />
     </main>
   );
 };
