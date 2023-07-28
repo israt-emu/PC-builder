@@ -4,14 +4,15 @@ import {ImCross} from "react-icons/im";
 import {AiOutlineMenu} from "react-icons/ai";
 import {useState} from "react";
 import logo from "../../assets/images/logo.png";
+import {Button} from "@/components/ui/button";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <header className="md:mx-8 md:rounded-b md:rounded-r p-2 text-textColor sticky top-0 z-50 font-mono bg-primary shadow-lg">
+    <header className="md:mx-8 md:rounded-b md:rounded-r p-2 text-textColor sticky top-0 z-50 font-mono bg-background shadow-lg">
       <div className="lg:container flex justify-between items-center h-12 ">
         <Link className="" href="/">
-          <Image src={logo} className="w-2/6 ml-2" alt="Logo" />
+          <Image src={logo} className="w-16 ml-2" alt="Logo" />
         </Link>
 
         <ul className="items-stretch hidden space-x-3 lg:flex px-4 rounded-md ">
@@ -22,8 +23,8 @@ const Navbar = () => {
           </li>
 
           <li className="flex items-center">
-            <Link href="/pc-builder" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
-              PC Builder
+            <Link href="/pc-builder" className="flex items-center px-4 py-1 rounded">
+              <Button variant="outline">PC Builder</Button>
             </Link>
           </li>
           {/* <li className="flex items-center">{user?.token && <img src={avatar} alt="" className="w-6 h-6 rounded-full" />}</li>
