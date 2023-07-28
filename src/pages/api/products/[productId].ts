@@ -3,7 +3,7 @@ import {NextApiRequest, NextApiResponse} from "next";
 import dbConnect from "../dbConnect";
 import {ObjectId} from "mongodb";
 
-export default async function getProducts(req: NextApiRequest, res: NextApiResponse) {
+export default async function getProductById(req: NextApiRequest, res: NextApiResponse) {
   try {
     const dbCollection = await dbConnect();
     const {productId} = req.query;
