@@ -101,7 +101,7 @@ const Navbar = () => {
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="p-0 py-0">Categories</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                   {components.map((component) => (
@@ -119,17 +119,16 @@ const Navbar = () => {
                 </Button>
               </Link>
             </NavigationMenuItem>
+            {session?.user ? (
+              <button className="flex px-2 md:px-4 bg-secondary py-2 rounded" onClick={() => signOut()}>
+                Log Out
+              </button>
+            ) : (
+              <Link href="/login" className="flex px-4 bg-secondary py-2 rounded">
+                Login
+              </Link>
+            )}
           </NavigationMenuList>
-
-          {session?.user ? (
-            <button className="flex px-2 md:px-4 bg-secondary py-2 rounded" onClick={() => signOut()}>
-              Log Out
-            </button>
-          ) : (
-            <Link href="/login" className="flex px-4 bg-secondary py-2 rounded">
-              Login
-            </Link>
-          )}
         </NavigationMenu>
 
         <div className="mt-4">

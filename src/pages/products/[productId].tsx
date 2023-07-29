@@ -24,6 +24,9 @@ const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}) => {
             <ProductBadge text="Status:" value={`${product?.status}`} />
             <ProductBadge text="Category:" value={`${product?.category}`} />
           </div>
+          <div>
+            <h1>Key Features:</h1>
+          </div>
           {/* <ProductFeatures features={product?.key_features} /> */}
         </div>
       </div>
@@ -48,9 +51,9 @@ const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}) => {
             <p className="text-primary font-semibold">Individual Rating:</p>
             {product?.reviews?.map((review, i) => (
               <div key={i} className="flex items-center">
-                <p>{review?.name}: </p>
+                <p className="font-semibold">{review?.name}: </p>
                 <p className="flex items-center gap-1">
-                  ( {review?.rating}) <FaStar />
+                  <FaStar className="text-yellow-500" /> ( {review?.rating})
                 </p>
               </div>
             ))}
@@ -58,7 +61,7 @@ const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}) => {
           <TabsContent value="reviews" className="lg:p-6 mt-3">
             {product?.reviews?.map((review, i) => (
               <div key={i} className="flex items-center gap-2">
-                <p>{review?.name}: </p>
+                <p className="font-semibold">{review?.name}: </p>
                 <p>{review?.review}</p>
               </div>
             ))}

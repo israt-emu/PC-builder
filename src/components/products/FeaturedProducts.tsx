@@ -5,10 +5,10 @@ import Link from "next/link";
 import {FaStar} from "react-icons/fa";
 const FeaturedProducts = ({products}: IProductProps) => {
   return (
-    <section className="w-11/12 mx-auto py-12 ">
+    <section className="sm:w-11/12 w-10/12 mx-auto py-12 " id="products">
       <h1 className="text-center text-2xl font-semibold mb-2">Featured Products</h1>
       <p className="text-center mb-8">Explore & Get your Desired Products!</p>
-      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 justify-between">
         {products?.map((product, i) => (
           <Card key={i} className="shadow-md hover:shadow-2xl">
             <Link href={`/products/${product?._id}`}>

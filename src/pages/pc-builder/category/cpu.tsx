@@ -17,9 +17,9 @@ const PCBuilderCPU: NextPageWithLayout<IProductProps> = ({products}) => {
     router.push("/pc-builder");
   };
   return (
-    <div className="container mx-auto py-12">
+    <div className="md:container w-10/12 mx-auto py-12">
       <h1 className="text-lg text-accent bg-background py-2 px-4 shadow-md mb-4  md:w-3/6 lg:w-2/6 font-semibold">CPU / Processor</h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {products?.map(
           (product, i) =>
             product?.category === "CPU" && (

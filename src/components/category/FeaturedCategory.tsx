@@ -47,7 +47,7 @@ const categories: {title: string; image: StaticImageData; href: string}[] = [
 ];
 const FeaturedCategory = () => {
   return (
-    <div className="w-11/12 mx-auto py-12 ">
+    <div className="w-11/12 mx-auto py-12 " id="category">
       <h1 className="text-center text-2xl font-semibold mb-2">Featured Categories</h1>
       <p className="text-center mb-8">Get your products from our featured category!</p>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 justify-between">

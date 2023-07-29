@@ -62,30 +62,30 @@ const PCBuilder: NextPageWithLayout = () => {
     });
   };
   return (
-    <div className="w-11/12 md:w-10/12 mx-auto py-12 my-12 shadow-lg grid grid-cols-1 md:grid-cols-2">
+    <div className="w-11/12 lg:w-10/12 mx-auto py-12 my-12 shadow-lg grid grid-cols-1 md:grid-cols-2 border rounded">
       <div className="border-r border-secondary">
         <p className="text-center mb-8 text-xl font-semibold text-primary">PC Builder - Build Your Own Computer</p>
 
         <div className="grid grid-cols-1 gap-4 justify-center px-6 ">
           {categories?.map((category: {title: string; image: StaticImageData; href: string}, i: number) => (
             <Card key={i} className="text-textColor hover:text-accent hover:shadow-xl">
-              <Link href={category?.href}>
-                <CardContent className="flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <Image src={category?.image} width={80} height={80} alt="card image" className="p-1" />
-                    <p className="text-center mt-3 text-sm font-medium">{category?.title}</p>
-                  </div>
+              <CardContent className="flex sm:flex-row flex-col sm:items-center sm:justify-between">
+                <div className="flex items-center gap-2">
+                  <Image src={category?.image} width={80} height={80} alt="card image" className="p-1" />
+                  <p className="lg:text-center mt-3 text-sm font-medium">{category?.title}</p>
+                </div>
+                <Link href={category?.href} className="ml-auto sm:ml-0">
                   <Button variant={"outline"} className="border-accent text-primary hover:text-background">
                     Choose
                   </Button>
-                </CardContent>
-              </Link>
+                </Link>
+              </CardContent>
             </Card>
           ))}
         </div>
       </div>
       <div>
-        <div className="flex items-center justify-between mb-8 px-6">
+        <div className="flex items-center justify-between mb-8 px-6 mt-6 md:mt-0">
           <p className="text-lg font-semibold text-accent">Total Products:{products?.length}</p>
           <button className="text-sm gradient py-1 px-2 rounded text-background " disabled={products?.length < 5} onClick={handleCompleteBuild}>
             Complete Build
@@ -95,13 +95,13 @@ const PCBuilder: NextPageWithLayout = () => {
           {products?.map((product: IProduct, i: number) => (
             <Card key={i} className="text-textColor hover:text-accent hover:shadow-xl">
               <CardContent className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Image src={product?.image} width={80} height={80} alt="card image" className="p-1" />
+                <div className="flex flex-col md:flex-row md:items-center gap-2">
+                  <Image src={product?.image} width={80} height={80} alt="card image" className="py-2" />
                   <div className="flex flex-col">
                     <p>{product?.category}</p>
-                    <p className="text-center mt-3 text-sm font-medium">{product?.productName}</p>
+                    <p className="lg:text-center mt-3 text-sm font-medium">{product?.productName}</p>
                   </div>
-                  <p>{product?.price}</p>
+                  <p>{product?.price}৳</p>
                 </div>
               </CardContent>
             </Card>
