@@ -6,13 +6,11 @@ export default async function getProducts(req: NextApiRequest, res: NextApiRespo
   try {
     const dbCollection = await dbConnect();
 
-    // Your MongoDB query here
-    const query = {
-      /* your query object */
-    };
-    const products = await dbCollection.find(query).toArray();
+    if (req.method === "GET") {
+      const products = await dbCollection.find({}).toArray();
 
-    res.send({message: "success", status: 200, data: products});
+      res.send({message: "success", status: 200, data: products});
+    }
   } catch (error) {
     res.status(500).json({error: "Error fetching data from MongoDB"});
   }

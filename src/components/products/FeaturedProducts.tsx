@@ -1,4 +1,4 @@
-import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from "@/components/ui/card";
+import {Card, CardContent} from "@/components/ui/card";
 import {IProductProps} from "@/types/products";
 import Image from "next/image";
 import Link from "next/link";

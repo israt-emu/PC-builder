@@ -1,4 +1,4 @@
-import {ReactElement, useState} from "react";
+import {ReactElement} from "react";
 import {Card, CardContent} from "@/components/ui/card";
 import {IProductProps} from "@/types/products";
 import Link from "next/link";
@@ -6,14 +6,14 @@ import Image from "next/image";
 import {FaStar} from "react-icons/fa";
 import {NextPageWithLayout} from "../_app";
 import RootLayout from "@/components/layout/RootLayout";
-const CPU: NextPageWithLayout<IProductProps> = ({products}) => {
+const Monitor: NextPageWithLayout<IProductProps> = ({products}) => {
   return (
     <div className="container mx-auto py-12">
-      <h1 className="text-lg text-accent bg-background py-2 px-4 shadow-md mb-4  md:w-3/6 lg:w-2/6 font-semibold">CPU / Processor</h1>
+      <h1 className="text-lg text-accent bg-background py-2 px-4 shadow-md mb-4  md:w-3/6 lg:w-2/6 font-semibold">Monitor</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
         {products?.map(
           (product, i) =>
-            product?.category === "CPU" && (
+            product?.category === "monitor" && (
               <Card key={i} className="shadow-md hover:shadow-2xl">
                 <Link href={`/products/${product?._id}`}>
                   <CardContent className="relative">
@@ -37,12 +37,12 @@ const CPU: NextPageWithLayout<IProductProps> = ({products}) => {
     </div>
   );
 };
-CPU.getLayout = function getLayout(CPU: ReactElement) {
-  return <RootLayout>{CPU}</RootLayout>;
+Monitor.getLayout = function getLayout(Monitor: ReactElement) {
+  return <RootLayout>{Monitor}</RootLayout>;
 };
 export const getStaticProps = async () => {
   const res = await fetch("http://localhost:3000/api/products");
   const data = await res.json();
   return {props: {products: data?.data}};
 };
-export default CPU;
+export default Monitor;

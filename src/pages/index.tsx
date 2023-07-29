@@ -44,7 +44,7 @@ Home.getLayout = function getLayout(Home: ReactElement) {
   return <RootLayout>{Home}</RootLayout>;
 };
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch("http://localhost:3000/api/products/featured");
   const data = await res.json();
   // console.log(data);
   return {
