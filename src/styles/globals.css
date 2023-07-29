@@ -66,6 +66,9 @@
 
     --ring: 217.2 32.6% 17.5%;
   }
+  .gradient {
+    background: linear-gradient(90deg, rgba(56, 67, 35, 1) 0%, rgba(103, 79, 150, 1) 100%);
+  }
 }
 
 @layer base {

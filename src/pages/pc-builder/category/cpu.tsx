@@ -1,11 +1,12 @@
 import {ReactElement, useState} from "react";
-import {Card, CardContent} from "@/components/ui/card";
+import {Card, CardContent, CardFooter} from "@/components/ui/card";
 import {IProductProps} from "@/types/products";
 import Link from "next/link";
 import Image from "next/image";
 import {FaStar} from "react-icons/fa";
 import RootLayout from "@/components/layout/RootLayout";
 import {NextPageWithLayout} from "@/pages/_app";
+import {Button} from "@/components/ui/button";
 const PCBuilderCPU: NextPageWithLayout<IProductProps> = ({products}) => {
   return (
     <div className="container mx-auto py-12">
@@ -30,6 +31,9 @@ const PCBuilderCPU: NextPageWithLayout<IProductProps> = ({products}) => {
                     </div>
                   </CardContent>
                 </Link>
+                <CardFooter className="text-right flex justify-end">
+                  <button className="text-sm gradient py-1 px-2 rounded text-background">Add to builder</button>
+                </CardFooter>
               </Card>
             )
         )}

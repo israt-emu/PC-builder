@@ -37,12 +37,12 @@ const PCBuilderMotherBoard: NextPageWithLayout<IProductProps> = ({products}) => 
     </div>
   );
 };
-MotherBoard.getLayout = function getLayout(MotherBoard: ReactElement) {
-  return <RootLayout>{MotherBoard}</RootLayout>;
+PCBuilderMotherBoard.getLayout = function getLayout(PCBuilderMotherBoard: ReactElement) {
+  return <RootLayout>{PCBuilderMotherBoard}</RootLayout>;
 };
 export const getStaticProps = async () => {
   const res = await fetch("http://localhost:3000/api/products");
   const data = await res.json();
   return {props: {products: data?.data}};
 };
-export default MotherBoard;
+export default PCBuilderMotherBoard;
