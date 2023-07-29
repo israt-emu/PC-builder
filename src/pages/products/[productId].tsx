@@ -1,5 +1,4 @@
 import {IProduct, ISingleProductProps} from "@/types/products";
-import {useRouter} from "next/router";
 import {ReactElement} from "react";
 import {NextPageWithLayout} from "../_app";
 import RootLayout from "@/components/layout/RootLayout";
@@ -7,7 +6,6 @@ import Image from "next/image";
 import ProductBadge from "@/components/ui/ProductBadge";
 import {FaStar} from "react-icons/fa";
 
-// import ProductFeatures from "@/components/ui/ProductFeatures";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 
 const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}) => {
@@ -32,9 +30,9 @@ const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}) => {
               </p>
             ))}
           </div>
-          {/* <ProductFeatures features={product?.key_features} /> */}
         </div>
       </div>
+      {/* description and reviews  */}
       <div className="py-6 bg-secondary">
         <Tabs defaultValue="description" className="w-10/12 mx-auto ">
           <TabsList className="rounded-none grid grid-cols-3 lg:grid-cols-6 bg-transparent border-b border-gray-500 pb-2">

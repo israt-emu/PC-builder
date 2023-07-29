@@ -1,4 +1,4 @@
-import {ReactElement, useState} from "react";
+import {ReactElement} from "react";
 import {Card, CardContent, CardFooter} from "@/components/ui/card";
 import {IProduct, IProductProps} from "@/types/products";
 import Link from "next/link";

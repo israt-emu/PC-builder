@@ -63,6 +63,7 @@ const PCBuilder: NextPageWithLayout = () => {
   };
   return (
     <div className="w-11/12 lg:w-10/12 mx-auto py-12 my-12 shadow-lg grid grid-cols-1 md:grid-cols-2 border rounded">
+      {/* //categpries */}
       <div className="border-r border-secondary">
         <p className="text-center mb-8 text-xl font-semibold text-primary">PC Builder - Build Your Own Computer</p>
 
@@ -84,6 +85,7 @@ const PCBuilder: NextPageWithLayout = () => {
           ))}
         </div>
       </div>
+      {/* total products  */}
       <div>
         <div className="flex items-center justify-between mb-8 px-6 mt-6 md:mt-0">
           <p className="text-lg font-semibold text-accent">Total Products:{products?.length}</p>

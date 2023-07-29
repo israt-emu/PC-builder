@@ -4,7 +4,6 @@ import {ReactElement} from "react";
 import {NextPageWithLayout} from "./_app";
 import RootLayout from "@/components/layout/RootLayout";
 import bannerImg from "../assets/images/banner.jpg";
-import {Button} from "@/components/ui/button";
 import FeaturedCategory from "@/components/category/FeaturedCategory";
 import FeaturedProducts from "@/components/products/FeaturedProducts";
 import {IProductProps} from "@/types/products";
@@ -18,6 +17,7 @@ const Home: NextPageWithLayout<IProductProps> = ({products}) => {
 
   return (
     <main className={`flex flex-col items-center py-8 justify-between ${inter.className}`}>
+      {/* banner  */}
       <section className="w-11/12 mx-auto bg-secondary rounded">
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:flex-row lg:justify-around">
           <div className="flex items-center justify-center p-6 mt-3 lg:mt-0 h-48 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
