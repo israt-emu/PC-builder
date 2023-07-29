@@ -47,6 +47,11 @@ const Navbar = () => {
         </Link>
         <NavigationMenu>
           <NavigationMenuList>
+            <NavigationMenuItem>
+              <Link href="/" className="flex items-center px-4 py-1">
+                Home
+              </Link>
+            </NavigationMenuItem>
             <NavigationMenuItem className="hover:bg-background">
               <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
               <NavigationMenuContent>
@@ -89,6 +94,11 @@ const Navbar = () => {
       <div className={`${open ? "flex" : "hidden"} justify-between backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md lg:hidden h-full w-9/12 mt-4`}>
         <NavigationMenu className="items-stretch flex flex-col space-x-3">
           <NavigationMenuList>
+            <NavigationMenuItem>
+              <Link href="/" className="flex items-center px-4 py-1">
+                Home
+              </Link>
+            </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Categories</NavigationMenuTrigger>
               <NavigationMenuContent>

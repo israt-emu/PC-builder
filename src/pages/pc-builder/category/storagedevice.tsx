@@ -1,12 +1,21 @@
 import {ReactElement, useState} from "react";
-import {Card, CardContent} from "@/components/ui/card";
-import {IProductProps} from "@/types/products";
+import {Card, CardContent, CardFooter} from "@/components/ui/card";
+import {IProduct, IProductProps} from "@/types/products";
 import Link from "next/link";
 import Image from "next/image";
 import {FaStar} from "react-icons/fa";
 import RootLayout from "@/components/layout/RootLayout";
 import {NextPageWithLayout} from "@/pages/_app";
+import {useRouter} from "next/router";
+import {useAppDispatch} from "@/redux/hooks";
+import {addToBuild} from "@/redux/pcBuilder/pcBuilderSlice";
 const PCBuilderStorageDevice: NextPageWithLayout<IProductProps> = ({products}) => {
+  const router = useRouter();
+  const dispatch = useAppDispatch();
+  const handleAddToBuild = (product: IProduct) => {
+    dispatch(addToBuild(product));
+    router.push("/pc-builder");
+  };
   return (
     <div className="container mx-auto py-12">
       <h1 className="text-lg text-accent bg-background py-2 px-4 shadow-md mb-4  md:w-3/6 lg:w-2/6 font-semibold">Storage Device</h1>
@@ -30,6 +39,11 @@ const PCBuilderStorageDevice: NextPageWithLayout<IProductProps> = ({products}) =
                     </div>
                   </CardContent>
                 </Link>
+                <CardFooter className="text-right flex justify-end">
+                  <button className="text-sm gradient py-1 px-2 rounded text-background" onClick={() => handleAddToBuild(product)}>
+                    Add to builder
+                  </button>
+                </CardFooter>
               </Card>
             )
         )}

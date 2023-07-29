@@ -13,7 +13,7 @@ import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}) => {
   return (
     <section className="">
-      <div className="container flex flex-col mx-auto lg:flex-row ">
+      <div className="container flex flex-col mx-auto lg:flex-row mt-4">
         <div className="w-full lg:w-1/3">
           <Image src={product?.image} alt="product" width={400} height={400} />
         </div>

@@ -10,6 +10,7 @@ import storage from "../../assets/images/storage.png";
 import ram from "../../assets/images/ram.png";
 import others from "../../assets/images/others.png";
 import Image, {StaticImageData} from "next/image";
+import Swal from "sweetalert2";
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import {useAppSelector} from "@/redux/hooks";
@@ -53,6 +54,13 @@ const PCBuilder: NextPageWithLayout = () => {
       href: "/pc-builder/category/others",
     },
   ];
+  const handleCompleteBuild = () => {
+    Swal.fire({
+      icon: "success",
+      title: "Wow!",
+      text: "You build your pc successfully!",
+    });
+  };
   return (
     <div className="w-11/12 md:w-10/12 mx-auto py-12 my-12 shadow-lg grid grid-cols-1 md:grid-cols-2">
       <div className="border-r border-secondary">
@@ -77,8 +85,11 @@ const PCBuilder: NextPageWithLayout = () => {
         </div>
       </div>
       <div>
-        <div className="flex items-center justify-end px-6">
-          <button className="text-sm gradient py-1 px-2 rounded text-background mb-8">Complete Build</button>
+        <div className="flex items-center justify-between mb-8 px-6">
+          <p className="text-lg font-semibold text-accent">Total Products:{products?.length}</p>
+          <button className="text-sm gradient py-1 px-2 rounded text-background " disabled={products?.length < 5} onClick={handleCompleteBuild}>
+            Complete Build
+          </button>
         </div>
         <div className="grid grid-cols-1 gap-4 justify-center px-6 ">
           {products?.map((product: IProduct, i: number) => (
