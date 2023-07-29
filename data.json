@@ -174,5 +174,395 @@
       "max_memory": "64GB",
       "form_factor": "Mini ITX"
     }
+  },
+  {
+    "id": 9,
+    "image": "https://i.ibb.co/N1FnfKC/ram1.jpg",
+    "productName": "Corsair Vengeance LPX 16GB DDR4 RAM",
+    "category": "RAM",
+    "price": 2080,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Emily Adams", "review": "Reliable and fast performance.", "rating": 4.8},
+      {"name": "Daniel Brown", "review": "Great RAM for gaming.", "rating": 4.7},
+      {"name": "Olivia Wilson", "review": "Easy to install and setup.", "rating": 4.5}
+    ],
+    "description": "The Corsair Vengeance LPX is a high-performance 16GB DDR4 RAM kit. It offers fast and reliable memory for your gaming and productivity needs. The RAM is designed for overclocking and provides excellent heat dissipation.",
+    "key_features": {
+      "brand": "Corsair",
+      "model": "Vengeance LPX",
+      "memory_type": "DDR4",
+      "capacity": "16GB (2 x 8GB)",
+      "speed": "3200MHz",
+      "cas_latency": "16-18-18-36"
+    }
+  },
+  {
+    "id": 10,
+    "image": "https://i.ibb.co/wCyqsYq/ram2.jpg",
+    "productName": "G.Skill Trident Z RGB 32GB DDR4 RAM",
+    "category": "RAM",
+    "price": 2500,
+    "status": "In stock",
+    "reviews": [
+      {"name": "William Johnson", "review": "Impressive RGB lighting effects.", "rating": 4.9},
+      {"name": "Ava Martinez", "review": "Fast and stable performance.", "rating": 4.7},
+      {"name": "Noah Davis", "review": "Great for multitasking and gaming.", "rating": 4.6}
+    ],
+    "description": "The G.Skill Trident Z RGB is a stunning 32GB DDR4 RAM kit featuring mesmerizing RGB lighting effects. It provides excellent performance and stability for gaming, content creation, and more. The RAM is optimized for the latest Intel and AMD platforms.",
+    "key_features": {
+      "brand": "G.Skill",
+      "model": "Trident Z RGB",
+      "memory_type": "DDR4",
+      "capacity": "32GB (2 x 16GB)",
+      "speed": "3600MHz",
+      "cas_latency": "16-19-19-39",
+      "rgb_support": true
+    }
+  },
+  {
+    "id": 11,
+    "image": "https://i.ibb.co/nRr2gjB/ram3.webp",
+    "productName": "Crucial Ballistix 8GB DDR4 RAM",
+    "category": "RAM",
+    "price": 2000,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Aiden Cooper", "review": "Reliable memory for everyday tasks.", "rating": 4.5},
+      {"name": "Mia Davis", "review": "Solid performance on a budget.", "rating": 4.3},
+      {"name": "Jacob Turner", "review": "Easy to install and setup.", "rating": 4.4}
+    ],
+    "description": "The Crucial Ballistix is a reliable 8GB DDR4 RAM module that offers solid performance for everyday computing tasks. It's an excellent choice for budget-conscious users who need a boost in their system's memory capacity.",
+    "key_features": {
+      "brand": "Crucial",
+      "model": "Ballistix",
+      "type": "DDR4",
+      "capacity": "8GB",
+      "speed": "2666MHz",
+      "cas_latency": "16",
+      "color": "Gray"
+    }
+  },
+  {
+    "id": 12,
+    "image": "https://i.ibb.co/JpvvYhk/monitor1.jpg",
+    "productName": "Dell UltraSharp U2719D 27-Inch Monitor",
+    "category": "monitor",
+    "price": 3500,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Emily Johnson", "review": "Crisp and vibrant colors.", "rating": 4.8},
+      {"name": "Alexander White", "review": "Excellent for photo editing.", "rating": 4.7},
+      {"name": "Sophia Martinez", "review": "Great viewing angles.", "rating": 4.6}
+    ],
+    "description": "The Dell UltraSharp U2719D is a 27-inch monitor with QHD resolution, providing crisp and vibrant colors. It's perfect for professionals and content creators who require accurate color representation and excellent viewing angles.",
+    "key_features": {
+      "brand": "Dell",
+      "model": "UltraSharp U2719D",
+      "display_size": "27 inches",
+      "resolution": "2560 x 1440 (QHD)",
+      "refresh_rate": "60Hz",
+      "panel_type": "IPS",
+      "color": "Black"
+    }
+  },
+  {
+    "id": 13,
+    "image": "https://i.ibb.co/B281KFv/monitor2.jpg",
+    "productName": "ASUS ROG Swift PG279Q 27-Inch Gaming Monitor",
+    "category": "monitor",
+    "price": 8000,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Noah Anderson", "review": "Smooth and responsive gaming experience.", "rating": 4.9},
+      {"name": "Ava Scott", "review": "Impressive 165Hz refresh rate.", "rating": 4.8},
+      {"name": "Ethan Murphy", "review": "G-Sync eliminates screen tearing.", "rating": 4.7}
+    ],
+    "description": "The ASUS ROG Swift PG279Q is a 27-inch gaming monitor with a high refresh rate of 165Hz and G-Sync technology, providing a smooth and responsive gaming experience. Its IPS panel ensures accurate colors and wide viewing angles.",
+    "key_features": {
+      "brand": "ASUS",
+      "model": "ROG Swift PG279Q",
+      "display_size": "27 inches",
+      "resolution": "2560 x 1440 (QHD)",
+      "refresh_rate": "165Hz",
+      "panel_type": "IPS",
+      "color": "Black"
+    }
+  },
+  {
+    "id": 14,
+    "image": "https://i.ibb.co/f1Mc3z3/monitor3.jpg",
+    "productName": "ViewSonic VX2458-C-MHD 24-Inch Curved Gaming Monitor",
+    "category": "monitor",
+    "price": 2500,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Liam Baker", "review": "Immersive gaming with the curved display.", "rating": 4.6},
+      {"name": "Luna Peterson", "review": "Fast response time for competitive gaming.", "rating": 4.5},
+      {"name": "Max Reed", "review": "Vibrant colors and wide viewing angles.", "rating": 4.4}
+    ],
+    "description": "The ViewSonic VX2458-C-MHD is a 24-inch curved gaming monitor, offering an immersive experience with its curved display. With a fast response time and vibrant colors, it's perfect for competitive gaming and multimedia consumption.",
+    "key_features": {
+      "brand": "ViewSonic",
+      "model": "VX2458-C-MHD",
+      "display_size": "24 inches",
+      "resolution": "1920 x 1080 (Full HD)",
+      "refresh_rate": "144Hz",
+      "panel_type": "VA",
+      "color": "Black"
+    }
+  },
+  {
+    "id": 15,
+    "image": "https://i.ibb.co/WgVKz0d/monitor4.webp",
+    "productName": "LG 34WN80C-B 34-Inch Ultrawide Monitor",
+    "category": "monitor",
+    "price": 6000,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Oliver Turner", "review": "Multitasking made easy with ultrawide display.", "rating": 4.7},
+      {"name": "Grace Allen", "review": "Great for productivity and content creation.", "rating": 4.6},
+      {"name": "Lucas Rivera", "review": "Stunning immersive gaming experience.", "rating": 4.5}
+    ],
+    "description": "The LG 34WN80C-B is a 34-inch ultrawide monitor, providing ample screen space for multitasking and productivity. With its IPS panel and excellent color accuracy, it's also a fantastic choice for content creators and offers an immersive gaming experience.",
+    "key_features": {
+      "brand": "LG",
+      "model": "34WN80C-B",
+      "display_size": "34 inches",
+      "resolution": "3440 x 1440 (UWQHD)",
+      "refresh_rate": "60Hz",
+      "panel_type": "IPS",
+      "color": "Silver"
+    }
+  },
+  {
+    "id": 16,
+    "image": "https://i.ibb.co/7WddR2v/ssd1.webp",
+    "productName": "SanDisk Extreme 1TB Portable SSD",
+    "category": "storage-device",
+    "price": 2500,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Ethan Baker", "review": "Fast and reliable portable storage.", "rating": 4.8},
+      {"name": "Nora Allen", "review": "Sleek and compact design.", "rating": 4.7},
+      {"name": "Lucas Mitchell", "review": "Ideal for media professionals.", "rating": 4.6}
+    ],
+    "description": "The SanDisk Extreme is a 1TB portable SSD offering fast and reliable storage in a compact form factor. With its rugged design, it's ideal for on-the-go media professionals and anyone who needs high-speed portable storage.",
+    "key_features": {
+      "brand": "SanDisk",
+      "model": "Extreme",
+      "capacity": "1TB",
+      "interface": "USB 3.1 Gen 2 (Type-C)",
+      "read_speed": "up to 550 MB/s",
+      "write_speed": "up to 500 MB/s",
+      "form_factor": "Portable (External)"
+    }
+  },
+  {
+    "id": 17,
+    "image": "https://i.ibb.co/sgjKKpK/ssd2.webp",
+    "productName": "Western Digital WD Red 6TB NAS Hard Drive",
+    "category": "storage-device",
+    "price": 2000,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Harper Adams", "review": "Perfect for NAS systems.", "rating": 4.7},
+      {"name": "Eva Hernandez", "review": "Reliable storage for backups.", "rating": 4.6},
+      {"name": "Andrew Scott", "review": "Low noise and power consumption.", "rating": 4.5}
+    ],
+    "description": "The Western Digital WD Red is a 6TB NAS hard drive designed for network-attached storage systems. It offers reliable storage for backups and data sharing, with low noise and power consumption for 24/7 operation.",
+    "key_features": {
+      "brand": "Western Digital",
+      "model": "WD Red",
+      "capacity": "6TB",
+      "interface": "SATA 6Gb/s",
+      "cache": "64MB",
+      "rotation_speed": "5400 RPM",
+      "form_factor": "3.5 inches"
+    }
+  },
+  {
+    "id": 18,
+    "image": "https://i.ibb.co/kGn0tGM/ssd3.jpg",
+    "productName": "Samsung 970 EVO Plus 500GB NVMe SSD",
+    "category": "storage-device",
+    "price": 1200,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Elijah Foster", "review": "Blazing fast read/write speeds.", "rating": 4.9},
+      {"name": "Isabella Clark", "review": "Reliable and durable SSD.", "rating": 4.8},
+      {"name": "Daniel Turner", "review": "Excellent choice for gaming.", "rating": 4.7}
+    ],
+    "description": "The Samsung 970 EVO Plus is a high-performance 500GB NVMe SSD with blazing fast read and write speeds. It offers reliability and durability, making it an excellent choice for gaming, multimedia editing, and intensive workloads.",
+    "key_features": {
+      "brand": "Samsung",
+      "model": "970 EVO Plus",
+      "capacity": "500GB",
+      "interface": "NVMe PCIe 3.0 x4",
+      "read_speed": "up to 3,500 MB/s",
+      "write_speed": "up to 3,300 MB/s",
+      "form_factor": "M.2"
+    }
+  },
+  {
+    "id": 19,
+    "image": "https://i.ibb.co/RhPNVXP/power1.jpg",
+    "productName": "Corsair RM750x 750W 80+ Gold Power Supply",
+    "category": "power-supply",
+    "price": 1300,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Ethan Turner", "review": "Stable and efficient power delivery.", "rating": 4.9},
+      {"name": "Grace Parker", "review": "Modular cables make cable management easy.", "rating": 4.8},
+      {"name": "Lucas Rivera", "review": "Reliable and quiet operation.", "rating": 4.7}
+    ],
+    "description": "The Corsair RM750x is a 750W power supply with 80+ Gold efficiency, ensuring stable and efficient power delivery. Its modular cables help in easy cable management, making it a popular choice for clean and tidy builds.",
+    "key_features": {
+      "brand": "Corsair",
+      "model": "RM750x",
+      "wattage": "750W",
+      "efficiency": "80+ Gold",
+      "modularity": "Fully Modular",
+      "fan": "135mm Rifle Bearing",
+      "certification": "80 PLUS Gold"
+    }
+  },
+  {
+    "id": 20,
+    "image": "https://i.ibb.co/NY9vvXD/power2.jpg",
+    "productName": "EVGA SuperNOVA 850 G3 850W 80+ Gold Power Supply",
+    "category": "power supply",
+    "price": 1700,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Olivia Mitchell", "review": "Rock-solid performance for high-end systems.", "rating": 4.9},
+      {"name": "Max Reed", "review": "Quiet operation even under heavy load.", "rating": 4.8},
+      {"name": "Ava Nelson", "review": "Efficient and reliable power supply.", "rating": 4.7}
+    ],
+    "description": "The EVGA SuperNOVA 850 G3 is an 850W power supply with 80+ Gold efficiency, providing rock-solid performance for high-end systems. Its quiet operation and reliable power delivery make it a top choice among enthusiasts.",
+    "key_features": {
+      "brand": "EVGA",
+      "model": "SuperNOVA 850 G3",
+      "wattage": "850W",
+      "efficiency": "80+ Gold",
+      "modularity": "Fully Modular",
+      "fan": "130mm Hydraulic Dynamic Bearing",
+      "certification": "80 PLUS Gold"
+    }
+  },
+  {
+    "id": 21,
+    "image": "https://i.ibb.co/wJX8LDM/power3.jpg",
+    "productName": "Seasonic Focus GX-650 650W 80+ Gold Power Supply",
+    "category": "power-supply",
+    "price": 1100,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Liam Baker", "review": "Efficient and stable for gaming rigs.", "rating": 4.8},
+      {"name": "Nora Allen", "review": "Compact size perfect for small cases.", "rating": 4.7},
+      {"name": "Ella Turner", "review": "Quality components for long-term use.", "rating": 4.6}
+    ],
+    "description": "The Seasonic Focus GX-650 is a 650W power supply with 80+ Gold efficiency, offering efficient and stable power for gaming rigs. Its compact size makes it a great choice for small form factor cases without compromising on quality.",
+    "key_features": {
+      "brand": "Seasonic",
+      "model": "Focus GX-650",
+      "wattage": "650W",
+      "efficiency": "80+ Gold",
+      "modularity": "Semi-Modular",
+      "fan": "120mm Fluid Dynamic Bearing",
+      "certification": "80 PLUS Gold"
+    }
+  },
+  {
+    "id": 22,
+    "image": "https://i.ibb.co/GCSHYQj/others1.jpg",
+    "productName": "Logitech G502 HERO High-Performance Gaming Mouse",
+    "category": "others",
+    "price": 1700,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Noah Thompson", "review": "Accurate and responsive sensor.", "rating": 4.9},
+      {"name": "Ella Rodriguez", "review": "Customizable buttons for gaming.", "rating": 4.8},
+      {"name": "Lucas Turner", "review": "Comfortable grip for long gaming sessions.", "rating": 4.7}
+    ],
+    "description": "The Logitech G502 HERO is a high-performance gaming mouse featuring an accurate and responsive sensor. It comes with customizable buttons and a comfortable grip, making it a top choice for gaming enthusiasts.",
+    "key_features": {
+      "brand": "Logitech",
+      "model": "G502 HERO",
+      "dpi": "200 to 16,000 DPI",
+      "buttons": "11 programmable buttons",
+      "connectivity": "Wired (USB)",
+      "grip_style": "Palm and Claw",
+      "color": "Black"
+    }
+  },
+  {
+    "id": 23,
+    "image": "https://i.ibb.co/KFJzjY0/others2.jpg",
+    "productName": "Razer DeathAdder V2 Pro Wireless Gaming Mouse",
+    "category": "others",
+    "price": 1300,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Oliver Cooper", "review": "Seamless wireless performance.", "rating": 4.9},
+      {"name": "Ava Peterson", "review": "Ergonomic design for extended use.", "rating": 4.8},
+      {"name": "William Turner", "review": "Precise and smooth tracking.", "rating": 4.7}
+    ],
+    "description": "The Razer DeathAdder V2 Pro is a wireless gaming mouse known for its seamless wireless performance. With its ergonomic design and precise tracking, it's perfect for extended gaming sessions.",
+    "key_features": {
+      "brand": "Razer",
+      "model": "DeathAdder V2 Pro",
+      "dpi": "200 to 20,000 DPI",
+      "buttons": "8 programmable buttons",
+      "connectivity": "Wireless (Razer HyperSpeed) or Wired (USB)",
+      "grip_style": "Palm",
+      "color": "Black"
+    }
+  },
+  {
+    "id": 24,
+    "image": "https://i.ibb.co/4dMbhRm/others3.jpg",
+    "productName": "Corsair K70 RGB MK.2 Mechanical Gaming Keyboard",
+    "category": "others",
+    "price": 1600,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Ethan Martinez", "review": "Responsive and durable mechanical keys.", "rating": 4.9},
+      {"name": "Sophia Williams", "review": "Customizable RGB lighting effects.", "rating": 4.8},
+      {"name": "Lucas Turner", "review": "Comfortable wrist rest for extended typing.", "rating": 4.7}
+    ],
+    "description": "The Corsair K70 RGB MK.2 is a mechanical gaming keyboard featuring responsive and durable mechanical keys. With customizable RGB lighting effects and a comfortable wrist rest, it's designed for both gaming and productivity.",
+    "key_features": {
+      "brand": "Corsair",
+      "model": "K70 RGB MK.2",
+      "switch_type": "Mechanical (Cherry MX or Corsair OPX)",
+      "backlighting": "RGB",
+      "connectivity": "Wired (USB)",
+      "extra_features": "Dedicated media keys, USB pass-through",
+      "color": "Black"
+    }
+  },
+  {
+    "id": 25,
+    "image": "https://i.ibb.co/jDqgxKD/others4.webp",
+    "productName": "Logitech G915 Lightspeed Wireless Gaming Keyboard",
+    "category": "others",
+    "price": 2000,
+    "status": "In stock",
+    "reviews": [
+      {"name": "Oliver Parker", "review": "Lag-free wireless performance.", "rating": 4.9},
+      {"name": "Emma Scott", "review": "Low-profile keys for smooth typing.", "rating": 4.8},
+      {"name": "William Adams", "review": "Premium build quality and design.", "rating": 4.7}
+    ],
+    "description": "The Logitech G915 Lightspeed is a wireless gaming keyboard known for its lag-free performance. With low-profile keys and a premium build quality, it offers a smooth typing experience and adds a touch of sophistication to your setup.",
+    "key_features": {
+      "brand": "Logitech",
+      "model": "G915 Lightspeed",
+      "switch_type": "Mechanical (GL Tactile, GL Linear, or GL Clicky)",
+      "backlighting": "RGB",
+      "connectivity": "Wireless (Logitech Lightspeed) or Wired (USB)",
+      "extra_features": "Dedicated media keys, USB passthrough",
+      "color": "Black"
+    }
   }
 ]

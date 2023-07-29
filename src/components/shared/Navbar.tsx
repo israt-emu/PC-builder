@@ -6,8 +6,10 @@ import {useState} from "react";
 import logo from "../../assets/images/logo.png";
 import {Button} from "@/components/ui/button";
 import {NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger} from "@/components/ui/navigation-menu";
-
+import {useSession, signOut, signIn} from "next-auth/react";
+import avatar from "../../assets/images/avatar.jpg";
 const Navbar = () => {
+  const {data: session} = useSession();
   const [open, setOpen] = useState(false);
   const components: {title: string; href: string}[] = [
     {
@@ -45,7 +47,7 @@ const Navbar = () => {
         <Link className="" href="/">
           <Image src={logo} className="w-16 ml-2" alt="Logo" />
         </Link>
-        <NavigationMenu>
+        <NavigationMenu className="hidden space-x-3 lg:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
               <Link href="/" className="flex items-center px-4 py-1">
@@ -72,30 +74,29 @@ const Navbar = () => {
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
-        </NavigationMenu>
-
-        {/* <li className="flex items-center">{user?.token && <img src={avatar} alt="" className="w-6 h-6 rounded-full" />}</li>
-
-          {user?.token ? (
-            <button className="flex items-center px-4 ml-2 bg-gray-500/30 py-1 rounded" onClick={logout}>
+          <NavigationMenuItem className="flex items-center">{session?.user && <Image src={avatar} alt="" className="w-10 h-10 rounded-full" />}</NavigationMenuItem>
+          {session?.user ? (
+            <button className="flex items-center px-4 ml-2 bg-secondary py-2 rounded" onClick={() => signOut()}>
               Log Out
             </button>
           ) : (
-            <Link to="/login" className="flex items-center px-4 ml-2 bg-gray-500/30 py-1 rounded">
+            <Link href="/login" className="flex items-center px-4 ml-2 bg-secondary py-2 rounded">
               Login
             </Link>
-          )} */}
+          )}
+        </NavigationMenu>
 
         <div className="flex justify-end items-center lg:hidden ml-auto mr-4">
-          <AiOutlineMenu className="text-xl font-bold text-white cursor-pointer" onClick={() => setOpen(true)} />
+          <AiOutlineMenu className="text-xl font-bold text-primary cursor-pointer" onClick={() => setOpen(true)} />
         </div>
       </div>
       {/* ///mobile menu  */}
-      <div className={`${open ? "flex" : "hidden"} justify-between backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md lg:hidden h-full w-9/12 mt-4`}>
-        <NavigationMenu className="items-stretch flex flex-col space-x-3">
-          <NavigationMenuList>
+      <div className={`${open ? "flex" : "hidden"} justify-between backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md flex lg:hidden h-full w-9/12 mt-4 py-4`}>
+        <NavigationMenu className="flex flex-col space-x-3">
+          <NavigationMenuList className="flex flex-col items-start">
+            <NavigationMenuItem className="flex">{session?.user && <Image src={avatar} alt="" className="w-10 h-10 rounded-full" />}</NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/" className="flex items-center px-4 py-1">
+              <Link href="/" className="flex py-1">
                 Home
               </Link>
             </NavigationMenuItem>
@@ -112,25 +113,24 @@ const Navbar = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/pc-builder" className="flex items-center px-4 py-1 rounded">
+              <Link href="/pc-builder" className="flex py-1 rounded">
                 <Button variant="outline" className="border-primary hover:text-background">
                   PC Builder
                 </Button>
               </Link>
             </NavigationMenuItem>
           </NavigationMenuList>
-        </NavigationMenu>
 
-        {/* <li className="flex items-center">{user?.token && <img src={avatar} alt="" className="w-6 h-6 rounded-full" />}</li>
-            {user?.token ? (
-              <button className="flex items-center px-4 ml-2 bg-gray-500/30 py-1 rounded" onClick={logout}>
-                Log Out
-              </button>
-            ) : (
-              <Link to="/login" className="flex items-center px-4 ml-2 bg-gray-500/30 py-1 rounded">
-                Login
-              </Link>
-            )} */}
+          {session?.user ? (
+            <button className="flex px-2 md:px-4 bg-secondary py-2 rounded" onClick={() => signOut()}>
+              Log Out
+            </button>
+          ) : (
+            <Link href="/login" className="flex px-4 bg-secondary py-2 rounded">
+              Login
+            </Link>
+          )}
+        </NavigationMenu>
 
         <div className="mt-4">
           <ImCross onClick={() => setOpen(false)} />
