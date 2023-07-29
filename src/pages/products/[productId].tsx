@@ -13,19 +13,24 @@ import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}) => {
   return (
     <section className="">
-      <div className="container flex flex-col mx-auto lg:flex-row mt-4">
+      <div className="md:container w-11/12 flex flex-col mx-auto lg:flex-row mt-4">
         <div className="w-full lg:w-1/3">
           <Image src={product?.image} alt="product" width={400} height={400} />
         </div>
         <div className="flex flex-col w-full p-6 lg:w-2/3 md:p-8 lg:p-12">
           <p className="text-xl text-accent font-semibold">{product?.productName}</p>
-          <div className="flex items-center gap-3 mt-3">
+          <div className="flex md:items-center gap-3 mt-3 flex-wrap">
             <ProductBadge text="Price:" value={`${product?.price}৳`} />
             <ProductBadge text="Status:" value={`${product?.status}`} />
             <ProductBadge text="Category:" value={`${product?.category}`} />
           </div>
           <div>
-            <h1>Key Features:</h1>
+            <h1 className="font-semibold text-primary my-2 text-lg">Key Features:</h1>
+            {Object.entries(product?.key_features!).map(([key, value]) => (
+              <p key={key} className="capitalize">
+                {key}: {value}
+              </p>
+            ))}
           </div>
           {/* <ProductFeatures features={product?.key_features} /> */}
         </div>

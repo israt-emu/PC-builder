@@ -98,7 +98,7 @@ const PCBuilder: NextPageWithLayout = () => {
                 <div className="flex flex-col md:flex-row md:items-center gap-2">
                   <Image src={product?.image} width={80} height={80} alt="card image" className="py-2" />
                   <div className="flex flex-col">
-                    <p>{product?.category}</p>
+                    <p className="capitalize">{product?.category}</p>
                     <p className="lg:text-center mt-3 text-sm font-medium">{product?.productName}</p>
                   </div>
                   <p>{product?.price}৳</p>
