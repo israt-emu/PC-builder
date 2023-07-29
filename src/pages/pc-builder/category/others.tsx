@@ -40,7 +40,7 @@ const PCBuilderOtherCategory: NextPageWithLayout<IProductProps> = ({products}) =
 PCBuilderOtherCategory.getLayout = function getLayout(PCBuilderOtherCategory: ReactElement) {
   return <RootLayout>{PCBuilderOtherCategory}</RootLayout>;
 };
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch("http://localhost:3000/api/products");
   const data = await res.json();
   return {props: {products: data?.data}};

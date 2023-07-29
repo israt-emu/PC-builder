@@ -40,7 +40,7 @@ const PCBuilderMotherBoard: NextPageWithLayout<IProductProps> = ({products}) => 
 PCBuilderMotherBoard.getLayout = function getLayout(PCBuilderMotherBoard: ReactElement) {
   return <RootLayout>{PCBuilderMotherBoard}</RootLayout>;
 };
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const res = await fetch("http://localhost:3000/api/products");
   const data = await res.json();
   return {props: {products: data?.data}};

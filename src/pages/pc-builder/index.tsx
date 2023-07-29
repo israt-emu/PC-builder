@@ -12,7 +12,10 @@ import others from "../../assets/images/others.png";
 import Image, {StaticImageData} from "next/image";
 import Link from "next/link";
 import {Button} from "@/components/ui/button";
+import {useAppSelector} from "@/redux/hooks";
+import {IProduct} from "@/types/products";
 const PCBuilder: NextPageWithLayout = () => {
+  const {products} = useAppSelector((state) => state.pcBuilder);
   const categories: {title: string; image: StaticImageData; href: string}[] = [
     {
       title: "CPU",
@@ -51,24 +54,48 @@ const PCBuilder: NextPageWithLayout = () => {
     },
   ];
   return (
-    <div className="w-11/12 md:w-10/12 lg:w-9/12 mx-auto py-12 my-12 shadow-lg ">
-      <p className="text-center mb-8 text-xl font-semibold text-primary">PC Builder - Build Your Own Computer</p>
-      <div className="grid grid-cols-1 gap-4 justify-center px-6 ">
-        {categories?.map((category: {title: string; image: StaticImageData; href: string}, i: number) => (
-          <Card key={i} className="text-textColor hover:text-accent hover:shadow-xl">
-            <Link href={category?.href}>
+    <div className="w-11/12 md:w-10/12 mx-auto py-12 my-12 shadow-lg grid grid-cols-1 md:grid-cols-2">
+      <div className="border-r border-secondary">
+        <p className="text-center mb-8 text-xl font-semibold text-primary">PC Builder - Build Your Own Computer</p>
+
+        <div className="grid grid-cols-1 gap-4 justify-center px-6 ">
+          {categories?.map((category: {title: string; image: StaticImageData; href: string}, i: number) => (
+            <Card key={i} className="text-textColor hover:text-accent hover:shadow-xl">
+              <Link href={category?.href}>
+                <CardContent className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <Image src={category?.image} width={80} height={80} alt="card image" className="p-1" />
+                    <p className="text-center mt-3 text-sm font-medium">{category?.title}</p>
+                  </div>
+                  <Button variant={"outline"} className="border-accent text-primary hover:text-background">
+                    Choose
+                  </Button>
+                </CardContent>
+              </Link>
+            </Card>
+          ))}
+        </div>
+      </div>
+      <div>
+        <div className="flex items-center justify-end px-6">
+          <button className="text-sm gradient py-1 px-2 rounded text-background mb-8">Complete Build</button>
+        </div>
+        <div className="grid grid-cols-1 gap-4 justify-center px-6 ">
+          {products?.map((product: IProduct, i: number) => (
+            <Card key={i} className="text-textColor hover:text-accent hover:shadow-xl">
               <CardContent className="flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <Image src={category?.image} width={80} height={80} alt="card image" className="p-1" />
-                  <p className="text-center mt-3 text-sm font-medium">{category?.title}</p>
+                  <Image src={product?.image} width={80} height={80} alt="card image" className="p-1" />
+                  <div className="flex flex-col">
+                    <p>{product?.category}</p>
+                    <p className="text-center mt-3 text-sm font-medium">{product?.productName}</p>
+                  </div>
+                  <p>{product?.price}</p>
                 </div>
-                <Button variant={"outline"} className="border-accent text-primary hover:text-background">
-                  Choose
-                </Button>
               </CardContent>
-            </Link>
-          </Card>
-        ))}
+            </Card>
+          ))}
+        </div>
       </div>
     </div>
   );
