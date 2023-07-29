@@ -10,7 +10,7 @@ import {FaStar} from "react-icons/fa";
 // import ProductFeatures from "@/components/ui/ProductFeatures";
 import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
 
-const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}: ISingleProductProps) => {
+const ProductDeatils: NextPageWithLayout<ISingleProductProps> = ({product}) => {
   return (
     <section className="">
       <div className="container flex flex-col mx-auto lg:flex-row ">
@@ -72,7 +72,7 @@ ProductDeatils.getLayout = function getLayout(ProductDeatils: ReactElement) {
   return <RootLayout>{ProductDeatils}</RootLayout>;
 };
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch(`${process.env.BASE_URL}/api/products`);
   const data = await res.json();
 
   const paths = data?.data?.map((single: IProduct) => ({
@@ -83,7 +83,7 @@ export const getStaticPaths = async () => {
 };
 export const getStaticProps = async (context: {params: any}) => {
   const {params} = context;
-  const res = await fetch(`http://localhost:3000/api/products/${params.productId}`);
+  const res = await fetch(`${process.env.BASE_URL}/api/products/${params.productId}`);
   const data = await res.json();
   // console.log(data);
 

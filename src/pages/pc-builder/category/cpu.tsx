@@ -55,7 +55,7 @@ PCBuilderCPU.getLayout = function getLayout(PCBuilderCPU: ReactElement) {
   return <RootLayout>{PCBuilderCPU}</RootLayout>;
 };
 export const getServerSideProps = async () => {
-  const res = await fetch("http://localhost:3000/api/products");
+  const res = await fetch(`${process.env.BASE_URL}/api/products`);
   const data = await res.json();
   return {props: {products: data?.data}};
 };

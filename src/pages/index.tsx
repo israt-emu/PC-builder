@@ -12,7 +12,9 @@ import {IProductProps} from "@/types/products";
 const inter = Inter({subsets: ["latin"]});
 
 const Home: NextPageWithLayout<IProductProps> = ({products}) => {
-  console.log(products);
+  //
+  // 
+  
   return (
     <main className={`flex flex-col items-center py-8 justify-between ${inter.className}`}>
       <section className="w-11/12 mx-auto bg-secondary rounded">
@@ -44,7 +46,7 @@ Home.getLayout = function getLayout(Home: ReactElement) {
   return <RootLayout>{Home}</RootLayout>;
 };
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/api/products/featured");
+  const res = await fetch(`${process.env.BASE_URL}/api/products/featured`);
   const data = await res.json();
   // console.log(data);
   return {
