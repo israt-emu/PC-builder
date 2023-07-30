@@ -12,7 +12,7 @@ const Login = () => {
           className="mx-auto cursor-pointer"
           onClick={() =>
             signIn("github", {
-              callbackUrl: `http://localhost:3000`,
+              callbackUrl: `${process.env.BASE_URL}`,
             })
           }
         />

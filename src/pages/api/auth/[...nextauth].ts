@@ -10,6 +10,9 @@ export const authOptions = {
     }),
     // ...add more providers here
   ],
+  pages: {
+    signIn: `${process.env.BASE_URL}/login`,
+  },
 };
 
 export default NextAuth(authOptions);
