@@ -89,7 +89,7 @@ export const getStaticPaths = async () => {
 };
 export const getStaticProps = async (context: {params: any}) => {
   const {params} = context;
-  const res = await fetch(`${process.env.BASE_URL}/api/products/${params.productId}`);
+  const res = await fetch(`https://pc-builder-ecru.vercel.app/api/products/${params.productId}`);
   const data = await res.json();
   // console.log(data);
 
