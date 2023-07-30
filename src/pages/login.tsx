@@ -12,7 +12,7 @@ const Login = () => {
           className="mx-auto cursor-pointer"
           onClick={() =>
             signIn("github", {
-              callbackUrl: `${process.env.BASE_URL}`,
+              callbackUrl: "https://pc-builder-ecru.vercel.app",
             })
           }
         />

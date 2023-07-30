@@ -1,7 +1,7 @@
-import NextAuth from "next-auth";
+import NextAuth, {NextAuthOptions} from "next-auth";
 import GithubProvider from "next-auth/providers/github";
 
-export const authOptions = {
+export const authOptions: NextAuthOptions = {
   // Configure one or more authentication providers
   providers: [
     GithubProvider({
@@ -11,7 +11,7 @@ export const authOptions = {
     // ...add more providers here
   ],
   pages: {
-    signIn: `${process.env.BASE_URL}/login`,
+    signIn: `https://pc-builder-ecru.vercel.app/login`,
   },
 };
 

@@ -1,5 +1,5 @@
 import RootLayout from "@/components/layout/RootLayout";
-import {ReactElement} from "react";
+import {ReactElement, useEffect, useReducer} from "react";
 import {Card, CardContent} from "@/components/ui/card";
 import {NextPageWithLayout} from "../_app";
 import cpu from "../../assets/images/cpu.png";
@@ -15,8 +15,17 @@ import Link from "next/link";
 import {Button} from "@/components/ui/button";
 import {useAppSelector} from "@/redux/hooks";
 import {IProduct} from "@/types/products";
+import {useSession} from "next-auth/react";
+import {useRouter} from "next/router";
 const PCBuilder: NextPageWithLayout = () => {
   const {products} = useAppSelector((state) => state.pcBuilder);
+  const {data: session} = useSession();
+  const router = useRouter();
+  useEffect(() => {
+    if (!session) {
+      router.push("/login");
+    }
+  }, [router, session]);
   const categories: {title: string; image: StaticImageData; href: string}[] = [
     {
       title: "CPU",
@@ -61,7 +70,8 @@ const PCBuilder: NextPageWithLayout = () => {
       text: "You build your pc successfully!",
     });
   };
-  return (
+
+  return session ? (
     <div className="w-11/12 lg:w-10/12 mx-auto py-12 my-12 shadow-lg grid grid-cols-1 md:grid-cols-2 border rounded">
       {/* //categpries */}
       <div className="border-r border-secondary">
@@ -111,7 +121,7 @@ const PCBuilder: NextPageWithLayout = () => {
         </div>
       </div>
     </div>
-  );
+  ) : null;
 };
 PCBuilder.getLayout = function getLayout(PCBuilder: ReactElement) {
   return <RootLayout>{PCBuilder}</RootLayout>;

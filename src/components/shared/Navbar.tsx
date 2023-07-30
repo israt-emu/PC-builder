@@ -6,7 +6,7 @@ import {useState} from "react";
 import logo from "../../assets/images/logo.png";
 import {Button} from "@/components/ui/button";
 import {NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger} from "@/components/ui/navigation-menu";
-import {useSession, signOut, signIn} from "next-auth/react";
+import {useSession, signOut} from "next-auth/react";
 import avatar from "../../assets/images/avatar.jpg";
 const Navbar = () => {
   const {data: session} = useSession();
@@ -67,7 +67,7 @@ const Navbar = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/pc-builder" className="flex items-center px-4 py-1 rounded">
+              <Link href={session ? "/pc-builder" : "/login"} className="flex items-center px-4 py-1 rounded">
                 <Button variant="outline" className="border-primary hover:text-background">
                   PC Builder
                 </Button>
@@ -113,7 +113,7 @@ const Navbar = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/pc-builder" className="flex py-1 rounded">
+              <Link href={session ? "/pc-builder" : "/login"} className="flex py-1 rounded">
                 <Button variant="outline" className="border-primary hover:text-background">
                   PC Builder
                 </Button>
