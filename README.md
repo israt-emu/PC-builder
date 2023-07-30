@@ -1,5 +1,7 @@
 ## Live Link: https://pc-builder-ecru.vercel.app
 
+## Github: https://github.com/israt-emu/PC-builder
+
 ## Products: https://pc-builder-ecru.vercel.app/api/products
 
 ## Features of this website
