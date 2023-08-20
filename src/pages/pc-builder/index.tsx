@@ -71,7 +71,7 @@ const PCBuilder: NextPageWithLayout = () => {
     });
   };
 
-  return session ? (
+  return (
     <div className="w-11/12 lg:w-10/12 mx-auto py-12 my-12 shadow-lg grid grid-cols-1 md:grid-cols-2 border rounded">
       {/* //categpries */}
       <div className="border-r border-secondary">
@@ -121,7 +121,7 @@ const PCBuilder: NextPageWithLayout = () => {
         </div>
       </div>
     </div>
-  ) : null;
+  );
 };
 PCBuilder.getLayout = function getLayout(PCBuilder: ReactElement) {
   return <RootLayout>{PCBuilder}</RootLayout>;

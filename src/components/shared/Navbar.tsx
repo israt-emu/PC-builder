@@ -67,7 +67,7 @@ const Navbar = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href={session ? "/pc-builder" : "/login"} className="flex items-center px-4 py-1 rounded">
+              <Link href={"/pc-builder"} className="flex items-center px-4 py-1 rounded">
                 <Button variant="outline" className="border-primary hover:text-background">
                   PC Builder
                 </Button>
@@ -113,7 +113,7 @@ const Navbar = () => {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href={session ? "/pc-builder" : "/login"} className="flex py-1 rounded">
+              <Link href={"/pc-builder"} className="flex py-1 rounded">
                 <Button variant="outline" className="border-primary hover:text-background">
                   PC Builder
                 </Button>
